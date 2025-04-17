@@ -1,0 +1,16 @@
+{
+  "name": "vanilla-nodejs-restapi",
+  "version": "1.0.0",
+  "main": "db.js",
+  "type": "module", 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "pg": "^8.14.1"
+  }
+}

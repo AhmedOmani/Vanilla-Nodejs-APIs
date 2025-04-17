@@ -1,0 +1,23 @@
+API Routes:
+    - GET all users =>> GET:/users
+    - GET user by id =>> GET:/users/:id
+    - Create new user =>> POST:/users
+        * POST body: 
+            {
+                "name": "",
+                "phone" : "",
+                "email" : ""
+            }
+    - Update user =>> PUT:/users/:id
+        * PUT body : 
+            {
+                "name" : "",
+                "phone" : "" ,
+                "email" : ""
+            }
+    - Delete user =>> DELETE:/users/:id
+
+LAYERS :
+
+    - server.js
+    - handler.js
