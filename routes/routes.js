@@ -25,8 +25,7 @@ class Router {
     matchPath(pathPattern , routePath) {
         //"/users/:userId/posts/:postId"
         //"/users/42/posts/123"
-        console.log(pathPattern);
-        console.log(routePath);
+
         const pathPatternParts = pathPattern.split("/").filter(part => part !== '');
         const routePathParts   = routePath.split("/").filter(part => part !== '');
 
@@ -62,7 +61,7 @@ const route = new Router() ;
 //userRoutes
 route.addRouter("GET" , "/" , userController.getHomePage);
 route.addRouter("GET" , "/users" , userController.getUsers);
-route.addRouter("GET" , "/users/:id" , userController.getUserById);
+route.addRouter("GET" , "/users/:id" , userController.getUserById) ;
 route.addRouter("POST" , "/users" , userController.createUser);
 route.addRouter("PUT" , "/users/:id" , userController.updateUser);
 route.addRouter("DELETE" , "/users/:id" , userController.deleteUser);
