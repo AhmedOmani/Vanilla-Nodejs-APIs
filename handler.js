@@ -25,7 +25,7 @@ const handler = async (request , response) => {
         return response.end();
     }
 
-    if (method == "POST" || method == "PUT") {
+    if (method == "POST" ) {
         console.log("matched route");
         console.log(matchedRoute);
         validateUserData(request , response , matchedRoute);

@@ -2,7 +2,7 @@
   "name": "vanilla-nodejs-restapi",
   "version": "1.0.0",
   "main": "db.js",
-  "type": "module", 
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "pg": "^8.14.1"
   }
 }

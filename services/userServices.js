@@ -17,6 +17,10 @@ class UserServices {
     async deleteUser(id) {
         return this.userRepository.deleteUser(id);
     }
+    //Logic services
+    async getEmail(email) {
+        return this.userRepository.getEmail(email);
+    }
 }
 
 export {
